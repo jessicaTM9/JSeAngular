@@ -1,0 +1,37 @@
+<section>
+  <div>
+    <div class="home">
+      <a routerLink=""> &lt; Voltar</a>
+      <img class="logoGit" src="../../assets/github_explorer.svg" alt="" />
+    </div>
+  </div>
+  <nav>
+    <div>
+      <img class="avatar" [src]="userInfo?.owner?.avatar_url" alt="avatar" />
+    </div>
+    <div class="title">
+      <strong>{{ userInfo?.full_name }}</strong>
+      <p>{{ userInfo?.description }}</p>
+    </div>
+  </nav>
+  <aside>
+    <div>
+      <strong> {{ userInfo?.stargazers_count }} </strong>
+      <p>stars</p>
+    </div>
+    <div class="numbers">
+      <strong>{{ userInfo?.forks }}</strong>
+      <p>Forks</p>
+    </div>
+    <div class="numbers">
+      <strong>{{ userInfo?.open_issues }}</strong>
+      <p>Issues abertas</p>
+    </div>
+  </aside>
+  <div *ngFor="let issuesUser of issues" class="issues">
+    <a [href]="issuesUser?.html_url" target="_blank">
+      <strong> {{ issuesUser?.title }}</strong>
+      <p>{{ issuesUser?.user.login }}</p>
+    </a>
+  </div>
+</section>

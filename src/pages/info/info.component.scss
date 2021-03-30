@@ -1,0 +1,89 @@
+section {
+  // background-color: #e5e5e5;
+  // background-image: url('../../../assets/Github.svg');
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .home {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 248px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+
+    .logoGit {
+      width: 100px;
+      text-align: end;
+
+      height: 18px;
+    }
+  }
+
+  a {
+    color: #41414d;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-size: 28px;
+  line-height: 42.19px;
+  color: #41414d;
+}
+p {
+  color: #a8a8b3;
+  font-size: 16px;
+}
+.title {
+  width: 800px;
+  padding-top: 30px;
+}
+
+nav {
+  display: flex;
+  width: 800px;
+  padding-top: 100px;
+
+  .avatar {
+    margin-left: 248px;
+    width: 134px;
+    height: 129px;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 19px;
+  }
+}
+aside {
+  display: flex;
+  margin-left: 248px;
+  padding-top: 31px;
+  flex-direction: row;
+  margin-bottom: 80px;
+
+  .numbers {
+    margin-left: 60px;
+  }
+}
+.issues {
+  border: 2px solid #ffff;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin-left: 200px;
+  background-color: #ffff;
+  padding: 15px;
+  width: 760px;
+  height: 112px;
+
+  strong {
+    font-size: 20px;
+    color: #41414d;
+    line-height: 1.5;
+  }
+  p {
+    color: #737380;
+    font-size: 16px;
+  }
+}

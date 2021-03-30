@@ -1,0 +1,26 @@
+<section>
+  <img class="background" src="../../../assets/github_explorer.svg" alt="" />
+  <h2>Explore repositório no Github.</h2>
+  <div>
+    <input
+      type="text"
+      id="valor"
+      [(ngModel)]="talk"
+      [ngModelOptions]="{ standalone: true }"
+    />
+    <button (click)="mostrarDados()">Pesquisar</button>
+  </div>
+  <aside>
+    <div class="list" *ngFor="let repository of users">
+      <a (click)="toInfo(repository)">
+        <img [src]="repository?.owner?.avatar_url" alt="" />
+        <div>
+          <h2>
+            {{ repository.full_name }}
+          </h2>
+          <span>{{ repository.description }}</span>
+        </div>
+      </a>
+    </div>
+  </aside>
+</section>
